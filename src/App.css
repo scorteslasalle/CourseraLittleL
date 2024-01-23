@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+body {
+  background-color: #edefee;
+  color: #333;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+header {
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.logo img {
+  width: 200px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  transition: opacity 0.3s ease;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #495e57;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f4ce14;
+}
+
+main.booking {
+  justify-content: space-evenly;
+}
+
+main.booking ul{
+  margin: 15px;
+}
+
+main.booking ul, main.booking h3{
+  color: #bd782f;
+}
+
+main.confirmation {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  padding: 20px 10%;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.App h1 {
+  text-align: center;
+  color: #495e57;
+  margin-bottom: 40px;
+}
+
+.promo-banner img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.three-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.three-columns h2 {
+  color: #495e57;
+}
+
+.column {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.column:hover {
+  transform: scale(1.05);
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.column:hover img {
+  opacity: 0.8;
+}
+
+.column h2 {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #495e57;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+footer img {
+  width: 25px;
+}
+
+.footer-column {
+  flex-basis: 48%;
+}
+
+.footer-column p {
+  text-align: end;
+}
+
+.footer-column img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add this styling to your BookingForm component */
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: auto;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #495e57;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+  border: none;
+}
+
+button:hover {
+  background-color: #5b8778;
+}
+
+/* Optional: Add more styles as needed */
